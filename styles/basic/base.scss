@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import 'global.scss';
+
+// 通用字体颜色
+// 浅灰
+.txtGray{color: $Gray;}
+// 红
+.txtRed{color: $Red;}
+
+body{
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #333;
+	-webkit-backface-visibility: hidden;
+	a{
+		color: #333;
+		&:hover{
+			color: #333;
+		}
+	}
+}
+
+.fr,.fl{display: inline;}
+.fl{float: left;}
+.fr{float: right;}
+
+.cl:after{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.cl{*zoom: 1;}
+
+html .txt-left{text-align: left;}
+html .txt-center{text-align: center;}
+html .txt-right{text-align: right;}
+html .txt-middle{vertical-align: middle;}
+
+html .f12{font-size: 12px;}
+html .f14{font-size: 14px;}
+html .f16{font-size: 16px;}
+html .f18{font-size: 18px;}
+
+
+@import "reset.scss";
+//@import "includes/header.scss";
+//@import "includes/footer.scss";
+//@import "layout.scss";
+@import "common.scss";

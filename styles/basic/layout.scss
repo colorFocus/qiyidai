@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.cl:after{
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.cl{
+	*zoom:1
+}
+
+.fr,.fl{display:inline}
+.fl{float:left}
+.fr{float:right}
+
+.container{
+	width:1024px; 
+	margin:0 auto;
+}
+.content{
+	width: 744px;
+    margin-left: 280px;
+}
+.sidebar{
+	width: 230px;
+}

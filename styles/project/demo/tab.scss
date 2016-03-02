@@ -1,0 +1,31 @@
+.container{
+	.tab-menus{
+		border: 1px solid #ccc;
+		border-bottom: none;
+		li{
+			display: inline-block;
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background: #ccc;
+			cursor: pointer;
+		}
+		li.active{
+			background: #fff;
+			cursor: default;
+		}
+
+	}
+	.tab-contents{
+		border: 1px solid #ccc;
+		div{
+			width: 200px;
+			height: 100px;
+			display: none;
+		}
+		div.active{
+			display: block;
+		}
+	}
+}

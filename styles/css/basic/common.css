@@ -1,0 +1,12 @@
+.ui-mask {
+  display: none;
+  background: #7f7f7f;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0.6;
+  overflow: hidden;
+}

@@ -1,0 +1,139 @@
+body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, lengend, button, input, textarea,
+th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button, input, select, textarea {
+  font: 12px/1.5  "\5fae\8f6f\96c5\9ed1","\5b8b\4f53", Arial, sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+code, kbd, pre, samp, tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+small {
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+:focus {
+  outline: 0;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: none;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  height: 100px;
+  background: #eee;
+}
+
+.footer {
+  height: 100px;
+  background: #bbb;
+}
+
+.cl:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.cl {
+  *zoom: 1;
+}
+
+.fr, .fl {
+  display: inline;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 744px;
+  margin-left: 280px;
+}
+
+.sidebar {
+  width: 230px;
+}
+
+.ui-mask {
+  display: none;
+  background: #7f7f7f;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0.6;
+  overflow: hidden;
+}

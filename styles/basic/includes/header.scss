@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import 'global.scss';
+
+.header{
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.ui-tip{
+		top: -9px;
+		right: 2px;
+	}
+	.top{
+		background: #f6f6f6;
+		height: 40px;
+		line-height: 40px;
+		font-size: 12px;
+	}
+	.top-inner{
+		width: $Gwidth - 50px * 2;
+		margin: 0 auto;
+		padding: 0 50px;
+		.q-bar{
+			border-left: 1px solid #e6e6e6;
+			height: 20px;
+			margin: 0 7px;
+		}
+		.logintxt{
+			margin-right: 56px;
+		}
+	}
+	.logo{
+		height: 55px;
+		margin-top: 12px;
+	}
+	.logo-inner{
+		width: $Gwidth - 20px * 2;
+		margin: 0 auto;
+		padding: 0 20px;
+		vertical-align: middle;
+		.logo-inner-wrap{
+			position: relative;
+			top: 7px;
+		}
+		.myqyd{
+			width: 198px;
+			height: 53px;
+			line-height: 53px;
+			text-align: center;
+			border: 1px solid $Gray;
+			display: inline-block;
+			background: #fff;
+		}
+	}
+	.nav{
+		margin-top: 27px;
+		height: 48px;
+		border-top: 1px solid $Gray;
+		border-bottom: 1px solid $Gray;
+		background: #66f;
+		font-size: 18px;
+		
+	}
+	.nav-inner{
+		width: $Gwidth;
+		margin: 0 auto;
+		.nav-list{
+			li{
+				float: left;
+				width: 158px;
+				height: 48px;
+				line-height: 48px;
+				position: relative;
+				.cur{
+					background: #0cf;
+					border: 1px solid #797979;
+					width: 156px;
+					height: 46px;
+					line-height: 46px;
+				}
+				a{
+					width: 158px;
+					display: inline-block;
+					color: #fff;
+					text-align: center;
+					&:hover{
+						background: #0cf;
+						border: 1px solid #797979;
+						width: 156px;
+						height: 46px;
+						line-height: 46px;
+					}
+				}
+			}
+		}
+	}
+}
