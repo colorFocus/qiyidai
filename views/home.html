@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="renderer" content="webkit">
+	<meta name="Description" content="">
+	<meta name="Keywords" content="">
+	<title>home demo</title>
+	<link rel="stylesheet" href="../dist/styles/basic/base.css">
+</head>
+<body>
+	<div class="header">header</div>
+	<div class="container">
+		<div class="sidebar fl">sidebar</div>
+		<div class="content">
+			<h1 class="js-title">home demo</h1>
+		</div>
+	</div>
+	<div class="footer">footer</div>
+	<script type="text/template" id="template_home">
+		<div class="box">
+			<h1>box.js home demo</h1>
+			<p>name: {{=it.name}}</p>
+			{{?it.state == 1}}
+				<p>state: 1</p>
+			{{??}}
+				<p>state: 2</p>
+			{{?}}
+			<p>each array</p>
+			<ul>
+			{{~it.list:item:index}}
+				<li>{{=index}} -- {{=item}}</li>
+			{{~}}
+			<p>each object</p>
+			<ol>
+			{{for(var prop in it.object){ }}
+				<li>{{=prop}} -- {{=it.object[prop]}}</li>
+			{{ } }}
+			</ol>
+		</div>
+	</script>
+	<script src="../dist/scripts/common.js"></script>
+	<script src="../dist/scripts/project/home/init.bundle.js"></script>
+</body>
+</html>
